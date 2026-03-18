@@ -6,13 +6,15 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase
 
 // 🔧 Firebase configuration
  const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_BUCKET",
-  messagingSenderId: "YOUR_ID",
-  appId: "YOUR_APP_ID",
-};
+    apiKey: "AIzaSyBcm4xy2Z_8kkBWuMztVmyQxP-ybs8rYnw",
+    authDomain: "gm-dashboard-87a53.firebaseapp.com",
+    projectId: "gm-dashboard-87a53",
+    storageBucket: "gm-dashboard-87a53.firebasestorage.app",
+    messagingSenderId: "287694629961",
+    appId: "1:287694629961:web:086bc95822ef2d590a2398",
+    measurementId: "G-SRDQ5BTBFJ"
+  };
+
 
 // 🔥 Initialize Firebase
 const app = initializeApp(firebaseConfig);
