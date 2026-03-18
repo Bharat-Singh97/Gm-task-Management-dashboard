@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- ✅ Logo -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <img src="logo.jpeg" alt="Logo" width="100" />
+  </div>
+
+  <h2 style="text-align:center;">GM - Task Management Dashboard</h2>
+  <div class="user-actions">
+ <a href="profile.html">My Profile</a>
+  <button id="logoutBtn">Logout</button>
+</div>
+
+<div class="chart-container">
+  <h3>Task Status Overview</h3>
+  <canvas id="taskStatusChart"></canvas>
+</div>
+
+<hr />
+
+
+  <!-- ✅ Task Form Section -->
+<div id="addTaskSection">
+  <input type="text" id="taskName" placeholder="Task Name" />
+  <span id="taskNameCount">0/10</span>
+
+  <textarea id="description" placeholder="Description" disabled></textarea>
+  <span id="descriptionCount">0/30</span>
+
+  <select id="assignTo" disabled>
+    <option value="">Assign To</option>
+  </select>
+
+  <input type="date" id="endDate" disabled />
+
+  <button id="addTask" disabled>Add Task</button>
+</div>
+
+
+  <hr />
+
+  <!-- ✅ Filters -->
+  <input type="text" id="searchInput" placeholder="Search Task Name..." />
+  <select id="statusFilter">
+    <option value="">All Status</option>
+    <option value="Pending">Pending</option>
+    <option value="Ongoing">Ongoing</option>
+    <option value="Completed">Completed</option>
+  </select>
+
+  <!-- ✅ Task Table -->
+  <table id="taskTable">
+   <thead>
+  <tr>
+    <th>Task</th>
+    <th>Description</th>
+    <th>Assigned To</th>
+    <th>Assigned By</th>
+    <th>Status</th>
+    <th>Rating</th>
+    <th>Assign Date</th>
+    <th>End Date</th>
+    <th>Comments</th><th>Actions</th>
+  </tr>
+</thead>
+    <tbody></tbody>
+  </table>
+
+  </tbody>
+  </table>
+
+  <div id="userManagementSection" style="display: none;">
+    <hr>
+    <h2>User Management</h2>
+    <p>Approve new users and manage roles.</p>
+    <table id="userManagementTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Current Role</th>
+          <th>Assign New Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        </tbody>
+    </table>
+  </div>
+
+  <br /><br />
+ 
+
+<div id="forwardModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Forward Task</h2>
+    <p>Select role to forward this task to:</p>
+    <select id="forwardRoleSelect">
+      </select>
+    <button id="confirmForwardBtn">Confirm Forward</button>
+  </div>
+</div>
+
+<div id="historyModal" class="modal">
+  <div class="modal-content">
+    <span class="close-history-button">&times;</span>
+    <h2>Task History</h2>
+    <div id="historyContent" class="history-content">
+      </div>
+  </div>
+</div>
+
+
+  <!-- ✅ Scripts -->
+  <script type="module" src="dashboard.js"></script>
+
+
+</body>
+</html>

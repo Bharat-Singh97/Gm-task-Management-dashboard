@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | GM Dashboard</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <header class="login-header">
+            <img src="assets/Indian Railways Logo.svg" alt="Indian Railways Logo">
+            <h1>उत्तर पश्चिम रेलवे</h1>
+            <h2>GM Task Management Dashboard</h2>
+        </header>
+
+        <main class="login-card">
+            <p class="card-title">Sign in to start your session</p>
+
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Remember Me
+                </label>
+                <a href="reset.html">Forgot Password?</a>
+            </div>
+
+            <button id="loginBtn">SIGN IN</button>
+            
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </main>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

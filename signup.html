@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | GM Dashboard</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <header class="signup-header">
+            <img src="assets/Indian Railways Logo.svg" alt="Indian Railways Logo">
+            <h1>उत्तर पश्चिम रेलवे</h1>
+            <h2>GM Task Management Dashboard</h2>
+        </header>
+
+        <main class="signup-card">
+            <p class="card-title">Create a new account</p>
+
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="text" id="phone" placeholder="Phone Number (Optional)">
+            </div>
+
+            <button id="signupBtn">SIGN UP</button>
+            
+            <p class="login-link">Already have an account? <a href="login.html">Sign In</a></p>
+        </main>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>

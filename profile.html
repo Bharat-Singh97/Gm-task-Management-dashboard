@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="dashboard.css" /> <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .profile-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        width: 400px;
+        text-align: center;
+    }
+    .profile-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <h2>My Profile</h2>
+    
+    <div>
+      <label for="profileName">Full Name:</label>
+      <input type="text" id="profileName" placeholder="Your full name">
+    </div>
+    
+    <div>
+      <label for="profileEmail">Email:</label>
+      <input type="email" id="profileEmail" disabled> </div>
+
+    <div>
+      <label for="profilePhone">Phone:</label>
+      <input type="text" id="profilePhone" placeholder="Your phone number">
+    </div>
+
+    <div>
+      <label for="profileDivision">Division:</label>
+      <input type="text" id="profileDivision" placeholder="e.g., Jaipur, Bikaner">
+    </div>
+
+    <button id="updateProfileBtn">Update Profile</button>
+    <p id="feedbackMessage" style="color: green;"></p>
+    
+    <br>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </div>
+
+  <script type="module" src="profile.js"></script>
+</body>
+</html>
